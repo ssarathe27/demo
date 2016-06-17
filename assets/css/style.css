@@ -1,0 +1,120 @@
+/*! Author: Divya Ranjan*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+*
+{
+font-family: 'Open Sans', sans-serif;
+}
+body
+{
+	background-image: -ms-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -moz-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -o-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #353C44), color-stop(7000, #23252B));
+	background-image: -webkit-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: linear-gradient(to bottom, #353C44 0%, #23252B 7000%);
+}
+.logo img
+{
+	display: block;
+	margin: 15vh auto 50px auto;
+	height: 40px;
+	width: 150px;
+}
+blockquote 
+{
+    border-left: 0;
+}
+blockquote.headline:before 
+{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    content: open-quote;
+    font-size: 6em;
+    margin-right: 0;
+    vertical-align: -0.5em;
+}
+blockquote.headline
+{
+	color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: left;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+    line-height: 50%;
+}
+.soundcloud
+{
+	-webkit-box-shadow: 0px 0px 50px 2px #000000;
+			box-shadow: 0px 0px 50px 2px #000000;
+}
+#highlighted-text
+{
+	display: inline-block;
+    background: #FFDD8B;
+    color: #45381A;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 5px 10px;
+    min-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer.footer
+{
+	background: #1A1C20;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	display: flex;
+    align-items: center;
+}
+ul.links 
+{
+	text-align: center;
+}
+.links li
+{
+	color: #f9f9f9;
+	list-style: none;
+	display: inline-block;
+}
+.links li a
+{
+	padding: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.copyright
+{
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.space
+{
+	height: 5px;
+}
+.space-10
+{
+	height: 10px;
+}
+.space-20
+{
+	height: 20px;
+}
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+}
