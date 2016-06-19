@@ -63,15 +63,12 @@
 	     function callback(data) {
 		    var time = data / 100;
 		    time = Math.floor(time);
-		    
-		    console.log(time);
-			if(time == 0)	{
-				//console.log('in here' + time);
+
+			if(time == 1)	{
 				document.getElementById("highlighted-text").style.display = "";
 				document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
 			}
 			if(time == 315) {
-				console.log('in here');
 				document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";
 			}
 			if(time == 380) {
