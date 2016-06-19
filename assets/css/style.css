@@ -1,8 +1,9 @@
 /*! Author: Divya Ranjan*/
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins:300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Marck+Script';
 *
 {
-font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 body
 {
@@ -16,7 +17,7 @@ body
 .logo img
 {
 	display: block;
-	margin: 15vh auto 50px auto;
+	margin: 15vh auto 15px auto;
 	height: 40px;
 	width: 150px;
 }
@@ -27,12 +28,10 @@ blockquote
 blockquote.headline:before 
 {
     color: #ffffff;
-    font-family: 'Open Sans', sans-serif;
+	font-family: 'Marck Script', cursive;
     font-weight: 100;
     content: open-quote;
-    font-size: 6em;
-    margin-right: 0;
-    vertical-align: -0.5em;
+    font-size: 30px;
 }
 blockquote.headline
 {
@@ -41,11 +40,10 @@ blockquote.headline
     margin: 0 auto;
     padding-top: 20px;
     text-align: left;
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    letter-spacing: 1.7px;
-    line-height: 50%;
+	font-size: 22px;
+	font-family: 'Marck Script', cursive;
+    letter-spacing: 1px;
+    line-height: 180%;
 }
 .soundcloud
 {
@@ -67,18 +65,15 @@ blockquote.headline
 }
 footer.footer
 {
-	background: #1A1C20;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100px;
-	display: flex;
-    align-items: center;
+
 }
 ul.links 
 {
 	text-align: center;
+}
+.footer-content
+{
+	padding: 30px;
 }
 .links li
 {
