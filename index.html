@@ -6,16 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Welcome Home</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script type="text/javascript">
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "The juices out of earth";},0);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";},31000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "Liberation of our fellow beings from structures, boundaries and meanings created by generations before us.";},38000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "among all who come in contact with it";},65000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "we shape into becoming startups with such men and women";},67000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "<a href=\"http://culture.preseed.in\">culture.Preseed.in</a>";},70000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "I am your new lover.";},76000);
-	</script>
+	<link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
 	<div class="logo"><img src="assets/images/logo.png"></div>
@@ -27,7 +18,14 @@
 		<div class="col-md-7 col-centered">
 			<div class="space-20"></div>
 			<div class="soundcloud">
-				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269322758&amp;color=353c44&hide_related=true&visual=true&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				<iframe 
+					id="soundcloud_widget"
+					width="100%" 
+					height="166" 
+					scrolling="no" 
+					frameborder="no" 
+					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269322758&amp;color=353c44&hide_related=true&visual=true&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+				></iframe>
 			</div>
 			<div id="highlighted-text"></div>
 		</div>
@@ -47,5 +45,62 @@
 		<div class="copyright centered">Copyright © 2016 Preseed Ventures Pvt. Ltd. &middot; All Rights Reserved</div>
 		</div>
 	</footer>
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous">			  
+	</script>
+	<script src="https://w.soundcloud.com/player/api.js"></script>
+	<script>
+		$(document).ready(function() {
+	     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+	     widget.bind(SC.Widget.Events.READY, function() {
+	       console.log('Ready...');
+	     });
+	     var intervalID = setInterval(function () {
+		     widget.getPosition(callback);
+	     }, 1);
+	     function callback(data) {
+		    var time = data / 100;
+		    time = Math.floor(time);
+		    
+		    console.log(time);
+			if(time == 0)	{
+				console.log('in here' + time);
+				document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
+			}
+			if(time == 315) {
+				console.log('in here');
+				document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";
+			}
+			if(time == 380) {
+				document.getElementById("highlighted-text").innerHTML = "Liberation of our fellow beings from structures, boundaries and meanings created by generations before us.";
+			}
+			if(time == 640) {
+				document.getElementById("highlighted-text").innerHTML = "among all who come in contact with it";
+			}
+			if(time == 671) {
+				document.getElementById("highlighted-text").innerHTML = "we shape into becoming startups with such men and women";
+			}
+			if(time == 710) {
+				document.getElementById("highlighted-text").innerHTML = "<a href=\"http://culture.preseed.in\">culture.Preseed.in</a>";
+			}
+			if(time == 754) {
+				document.getElementById("highlighted-text").innerHTML = "I am your new lover.";
+			}
+	     }
+	   });
+	</script>
+		<script type="text/javascript">
+			/*
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "The juices out of earth";},0);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";},31000);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "Liberation of our fellow beings from structures, boundaries and meanings created by generations before us.";},38000);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "among all who come in contact with it";},65000);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "we shape into becoming startups with such men and women";},67000);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "<a href=\"http://culture.preseed.in\">culture.Preseed.in</a>";},70000);
+		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "I am your new lover.";},76000);
+		*/
+	</script>  
 </body>
 </html>
