@@ -27,7 +27,7 @@
 					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269322758&amp;color=353c44&hide_related=true&visual=true&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
 				></iframe>
 			</div>
-			<div id="highlighted-text"></div>
+			<div id="highlighted-text" style="display: none"></div>
 		</div>
 	<footer class="footer">
 		<div class="col-md-7 col-centered">
@@ -66,7 +66,8 @@
 		    
 		    console.log(time);
 			if(time == 0)	{
-				console.log('in here' + time);
+				//console.log('in here' + time);
+				document.getElementById("highlighted-text").style.display = "";
 				document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
 			}
 			if(time == 315) {
@@ -90,17 +91,6 @@
 			}
 	     }
 	   });
-	</script>
-		<script type="text/javascript">
-			/*
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "The juices out of earth";},0);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";},31000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "Liberation of our fellow beings from structures, boundaries and meanings created by generations before us.";},38000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "among all who come in contact with it";},65000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "we shape into becoming startups with such men and women";},67000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "<a href=\"http://culture.preseed.in\">culture.Preseed.in</a>";},70000);
-		setTimeout(function(){document.getElementById("highlighted-text").innerHTML = "I am your new lover.";},76000);
-		*/
 	</script>  
 </body>
 </html>
