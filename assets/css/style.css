@@ -1,0 +1,115 @@
+/*! Author: Divya Ranjan*/
+@import 'https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins:300,400,500,600,700';
+@import 'https://fonts.googleapis.com/css?family=Marck+Script';
+*
+{
+	font-family: 'Poppins', sans-serif;
+}
+body
+{
+	background-image: -ms-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -moz-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -o-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #353C44), color-stop(7000, #23252B));
+	background-image: -webkit-linear-gradient(top, #353C44 0%, #23252B 7000%);
+	background-image: linear-gradient(to bottom, #353C44 0%, #23252B 7000%);
+}
+.logo img
+{
+	display: block;
+	margin: 15vh auto 15px auto;
+	height: 40px;
+	width: 150px;
+}
+blockquote 
+{
+    border-left: 0;
+}
+blockquote.headline:before 
+{
+    color: #ffffff;
+	font-family: 'Marck Script', cursive;
+    font-weight: 100;
+    content: open-quote;
+    font-size: 30px;
+}
+blockquote.headline
+{
+	color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: left;
+	font-size: 22px;
+	font-family: 'Marck Script', cursive;
+    letter-spacing: 1px;
+    line-height: 180%;
+}
+.soundcloud
+{
+	-webkit-box-shadow: 0px 0px 50px 2px #000000;
+			box-shadow: 0px 0px 50px 2px #000000;
+}
+#highlighted-text
+{
+	display: inline-block;
+    background: #FFDD8B;
+    color: #45381A;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 5px 10px;
+    min-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer.footer
+{
+
+}
+ul.links 
+{
+	text-align: center;
+}
+.footer-content
+{
+	padding: 30px;
+}
+.links li
+{
+	color: #f9f9f9;
+	list-style: none;
+	display: inline-block;
+}
+.links li a
+{
+	padding: 5px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.copyright
+{
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.space
+{
+	height: 5px;
+}
+.space-10
+{
+	height: 10px;
+}
+.space-20
+{
+	height: 20px;
+}
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+}
