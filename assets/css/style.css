@@ -25,14 +25,6 @@ blockquote
 {
     border-left: 0;
 }
-blockquote.headline:before 
-{
-    color: #ffffff;
-	font-family: 'Marck Script', cursive;
-    font-weight: 100;
-    content: open-quote;
-    font-size: 30px;
-}
 blockquote.headline
 {
 	color: #ffffff;
