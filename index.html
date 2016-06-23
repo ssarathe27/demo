@@ -10,13 +10,10 @@
 </head>
 <body>
 	<div class="logo"><img src="assets/images/logo.png"></div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
+	<div class="space-80"></div>
 		<div class="col-md-6 col-centered">
 			<blockquote class="headline">
-				Our culture is made up of doing things others won't. In business it means, solving problems others won't dare solve.
+				Before Preseed, you had a mere will to do something out of the ordinary. Now you will have a rock solid idea to do.
 			</blockquote>
 		</div>
 		<div class="space-20"></div>
@@ -32,24 +29,21 @@
 					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269322758&amp;color=353c44&hide_related=true&visual=true&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
 				></iframe>
 			</div>
+			<div class="space-10"></div>
 			<div id="highlighted-text" style="display: none;"></div>
 		</div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
-	<div class="space-20"></div>
+	<div class="space-80"></div>
 	<footer class="footer">
-		<div class="col-md-7 col-centered footer-content">
+		<div class="col-md-7 col-centered footer-content col-centered">
 		<ul class="links">
 			<li><a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5#.u1t1mzqht" target="_blank">Faq</a></li>
 			<li>&middot;</li>
-			<li><a href="http://preseedprints.com/" target="_blank">Shop</a></li>
+			<li><a href="http://preseed.in/team.html" target="_blank">Team</a></li>
 			<li>&middot;</li>
-			<li><a href="http://culture.preseed.in/" target="_blank">Culture</a></li>
+			<li><a href="https://medium.com/the-preseed/about-preseed-a4836cfaa08b" target="_blank">Culture</a></li>
 			<li>&middot;</li>
-			<li><a href="http://preseeded.preseed.in/" target="_blank">Preseeded</a></li>
+			<li><a href="http://startups.preseed.in/" target="_blank">Preseed Startups</a></li>
 		</ul>
-		<div class="copyright centered">Copyright © 2016 Preseed Ventures Pvt. Ltd. &middot; All Rights Reserved</div>
 		</div>
 	</footer>
 	<script
@@ -62,7 +56,6 @@
 		$(document).ready(function() {
 	     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
 	     widget.bind(SC.Widget.Events.READY, function() {
-	       console.log('Ready...');
 	     });
 	     var intervalID = setInterval(function () {
 		     widget.getPosition(callback);
@@ -92,6 +85,7 @@
 			}
 			if(time == 754) {
 				document.getElementById("highlighted-text").innerHTML = "I am your new lover.";
+				setTimeout(function(){ document.getElementById("highlighted-text").innerHTML = "We have extraordinary minds. <a href='http://apply.preseed.in'>Join us</a> if you do too."; }, 3000);
 			}
 	     }
 	   });

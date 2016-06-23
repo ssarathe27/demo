@@ -47,25 +47,32 @@ blockquote.headline
 }
 .soundcloud
 {
+	background: #ffffff;
+	border-top: 3px solid #FF4400;
 	-webkit-box-shadow: 0px 0px 50px 2px #000000;
 			box-shadow: 0px 0px 50px 2px #000000;
 }
 #highlighted-text
 {
-	display: inline-block;
+ 	display: inline;
     background: #FFDD8B;
     color: #45381A;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 5px;
     min-width: 200px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 15px auto;
+    text-align: left;
 }
 footer.footer
 {
 
+}
+ul, li
+{
+	margin: 0;
+	padding: 0;
 }
 ul.links 
 {
@@ -107,6 +114,10 @@ ul.links
 .space-20
 {
 	height: 20px;
+}
+.space-80
+{
+	height: 80px;
 }
 .col-centered
 {
