@@ -56,15 +56,19 @@
 		$(document).ready(function() {
 	     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
 	     widget.bind(SC.Widget.Events.READY, function() {
+		     //widget.seekTo(2000);
 	     });
+	     //widget.seekTo(2000);
 	     var intervalID = setInterval(function () {
 		     widget.getPosition(callback);
 	     }, 1);
 	     function callback(data) {
+		     //widget.seekTo(2000);
 		    var time = data / 100;
 		    time = Math.floor(time);
 
-			if(time == 1)	{
+			if(time == 0)	{
+				widget.seekTo(1500);
 				document.getElementById("highlighted-text").style.display = "";
 				document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
 			}
