@@ -13,7 +13,7 @@
 	<div class="space-80"></div>
 		<div class="col-md-6 col-centered">
 			<blockquote class="headline">
-				Our culture is made up of doing things others won't. In business it means, solving problems others won't dare solve.
+				Before Preseed, you had a mere will to do something out of the ordinary. Now you will have a rock solid idea to do.
 			</blockquote>
 		</div>
 		<div class="space-20"></div>
@@ -30,19 +30,21 @@
 				></iframe>
 			</div>
 			<div class="space-10"></div>
-			<div id="highlighted-text" style="display: none;"></div>
+			<div id="highlighted-text" style="">The juices out of earth</div>
 		</div>
 	<div class="space-80"></div>
 	<footer class="footer">
 		<div class="col-md-7 col-centered footer-content col-centered">
 		<ul class="links">
-			<li><a href="http://preseeded.preseed.in/" target="_blank">Preseeded</a></li>
-			<li>&middot;</li>
-			<li><a href="http://culture.preseed.in" target="_blank">Culture</a></li>
-			<li>&middot;</li>
-			<li><a href="http://preseedprints.com/" target="_blank">Shop</a></li>
-			<li>&middot;</li>
-			<li><a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5#.u1t1mzqht" target="_blank">Faq</a></li>
+			<li><a href="http://preseed.in" target="_blank">Preseed</a></li>
+            <li>&middot;</li>
+            <li><a href="http://preseeded.preseed.in" target="_blank">Preseeded</a></li>
+            <li>&middot;</li>
+            <li><a href="http://culture.preseed.in" target="_blank">Culture</a></li>
+            <li>&middot;</li>
+            <li><a href="http://preseedprints.com/" target="_blank">Shop</a></li>
+            <li>&middot;</li>
+            <li><a href="https://medium.com/the-preseed/faqs-about-preseed-7c2a803c13f5#.u1t1mzqht" target="_blank">Faq</a></li>
 		</ul>
 		</div>
 	</footer>
@@ -56,19 +58,15 @@
 		$(document).ready(function() {
 	     var widget = SC.Widget(document.getElementById('soundcloud_widget'));
 	     widget.bind(SC.Widget.Events.READY, function() {
-		     //widget.seekTo(2000);
 	     });
-	     //widget.seekTo(2000);
 	     var intervalID = setInterval(function () {
 		     widget.getPosition(callback);
 	     }, 1);
 	     function callback(data) {
-		     //widget.seekTo(2000);
 		    var time = data / 100;
 		    time = Math.floor(time);
 
-			if(time == 0)	{
-				widget.seekTo(1500);
+			if(time == 1)	{
 				document.getElementById("highlighted-text").style.display = "";
 				document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
 			}

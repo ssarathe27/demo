@@ -19,11 +19,19 @@ body
 	display: block;
 	margin: 15vh auto 15px auto;
 	height: 40px;
-	width: 140px;
+	width: 150px;
 }
 blockquote 
 {
     border-left: 0;
+}
+blockquote.headline:before 
+{
+    color: #ffffff;
+	font-family: 'Marck Script', cursive;
+    font-weight: 100;
+    content: open-quote;
+    font-size: 30px;
 }
 blockquote.headline
 {
@@ -31,7 +39,7 @@ blockquote.headline
     display: block;
     margin: 0 auto;
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
 	font-size: 22px;
 	font-family: 'Marck Script', cursive;
     letter-spacing: 1px;
